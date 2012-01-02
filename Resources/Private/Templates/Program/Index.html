@@ -1,0 +1,41 @@
+<button id="ajax">fetch list</button> <button id="clear">delete list(s)</button>
+
+<div id="list">List(s):</div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    alert("hi");
+  });
+</script>
+<script type="text/javascript">
+ajaxUrl = "{f:uri.action(action:'ajax', pageType:'99')}";
+
+(function($) {
+
+    $(document).ready(function(){
+
+        $('#clear').click(function(){
+            $('#list').text('List(s):');
+        });
+
+        $('#ajax').click(function()
+        {
+          alert(ajaxUrl);
+            $.getJSON(ajaxUrl, function(data) {
+                var items = [];
+                $.each(data, function(key, val) {
+                    items.push('<li id="' + key + '">' + val + '</li>');
+                });
+
+                $('<ul/>', {
+                html: items.join('')
+                }).appendTo('#list');
+            });
+			
+			return false;
+        });
+    });
+
+})(jQuery);
+</script>

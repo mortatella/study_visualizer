@@ -59,6 +59,19 @@ class Tx_StudyVisualizer_Controller_ProgramController extends Tx_Extbase_MVC_Con
 		$programs = $this->programRepository->findAll();
 		$this->view->assign('programs', $programs);
 	}
+	
+	public function indexAction()
+	{
+	}
+	
+	/**
+     * @return void
+     */
+	public function initializeAction() {
+		
+		if(!isset($this->settings))
+			throw new Exception('Please include typescript to enable the extension.');
+    }
 
 	/**
 	 * action show
@@ -91,6 +104,18 @@ class Tx_StudyVisualizer_Controller_ProgramController extends Tx_Extbase_MVC_Con
 		$this->programRepository->add($newProgram);
 		$this->flashMessageContainer->add('Your new Program was created.');
 		$this->redirect('list');
+	}
+	
+	public function ajaxAction() 
+	{
+        $json = array(
+            'jQuery',
+            'ExtJS',
+            'Prototype',
+            'MooTools'
+        );
+
+       return json_encode($json);
 	}
 
 	/**

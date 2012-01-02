@@ -7,7 +7,7 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	$_EXTKEY,
 	'Studyvisualizer',
 	array(
-		'Program' => 'list, show, new, create, edit, update, delete',
+		'Program' => 'list, show, new, create, edit, update, delete, ajax',
 		'Course' => 'show, list, new, create, edit, update, delete',
 		'Similarity' => 'new, create, edit, update, delete',
 		'CourseField' => 'new, create, edit, update, delete',
