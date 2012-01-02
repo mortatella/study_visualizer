@@ -1,0 +1,67 @@
+<f:layout name="Default" />
+
+
+
+This Template is responsible for creating a table of domain objects.
+
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<h1>Listing for Program</h1>
+
+<f:flashMessages />
+
+
+
+
+
+<table  class="tx_studyvisualizer" >
+	<tr>
+		<th><f:translate key="tx_studyvisualizer_domain_model_program.name" /></th>
+		<th><f:translate key="tx_studyvisualizer_domain_model_program.description" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+	
+<script>
+
+$(document).ready(function()
+{
+  $("#clickTest").click(function() 
+  {
+    $.ajax({
+      url: "index.php",
+      type: "GET", 
+      data: "eID=test",
+      success: function(response) 
+      {
+        $("#output").html("response "+response);
+      }
+     });
+
+  });
+
+});
+</script>
+	<div id="output" style="width:100px; height:100px"></div>
+<p id="clickTest">sdfsdf</p>
+	<f:for each="{programs}" as="program">
+		<tr>
+			<td><f:link.action action="show" arguments="{program : program}"> {program.name}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{program : program}"> {program.description}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{program : program}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{program : program}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New ddd Program</f:link.action>
+</f:section>

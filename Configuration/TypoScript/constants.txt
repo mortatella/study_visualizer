@@ -1,0 +1,14 @@
+plugin.tx_studyvisualizer {
+	view {
+		# cat=plugin.tx_studyvisualizer/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:study_visualizer/Resources/Private/Templates/
+		# cat=plugin.tx_studyvisualizer/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:study_visualizer/Resources/Private/Partials/
+		# cat=plugin.tx_studyvisualizer/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:study_visualizer/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_studyvisualizer//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+}

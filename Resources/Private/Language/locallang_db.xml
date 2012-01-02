@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'study_visualizer'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_studyvisualizer_domain_model_program">Program</label>
+			<label index="tx_studyvisualizer_domain_model_program.name">Name</label>
+			<label index="tx_studyvisualizer_domain_model_program.description">Description</label>
+			<label index="tx_studyvisualizer_domain_model_program.graduateswith">Graduateswith</label>
+			<label index="tx_studyvisualizer_domain_model_program.istypeof">Istypeof</label>
+			<label index="tx_studyvisualizer_domain_model_program.consistsof">Consistsof</label>
+			<label index="tx_studyvisualizer_domain_model_program.programmfield">Programmfield</label>
+			<label index="tx_studyvisualizer_domain_model_course">Course</label>
+			<label index="tx_studyvisualizer_domain_model_course.title">Title</label>
+			<label index="tx_studyvisualizer_domain_model_course.description">Description</label>
+			<label index="tx_studyvisualizer_domain_model_course.ects">Ects</label>
+			<label index="tx_studyvisualizer_domain_model_course.sws">Sws</label>
+			<label index="tx_studyvisualizer_domain_model_course.typeof">Typeof</label>
+			<label index="tx_studyvisualizer_domain_model_course.infields">Infields</label>
+			<label index="tx_studyvisualizer_domain_model_similarity">Similarity</label>
+			<label index="tx_studyvisualizer_domain_model_similarity.program">Program</label>
+			<label index="tx_studyvisualizer_domain_model_similarity.similar_program">Similar Program</label>
+			<label index="tx_studyvisualizer_domain_model_similarity.fromfield">Fromfield</label>
+			<label index="tx_studyvisualizer_domain_model_coursefield">Course Field</label>
+			<label index="tx_studyvisualizer_domain_model_coursefield.ispart">Ispart</label>
+			<label index="tx_studyvisualizer_domain_model_graudation">Graudation</label>
+			<label index="tx_studyvisualizer_domain_model_graudation.title">Title</label>
+			<label index="tx_studyvisualizer_domain_model_graudation.description">Description</label>
+			<label index="tx_studyvisualizer_domain_model_programtype">Program Type</label>
+			<label index="tx_studyvisualizer_domain_model_programtype.title">Title</label>
+			<label index="tx_studyvisualizer_domain_model_programtype.description">Description</label>
+			<label index="tx_studyvisualizer_domain_model_coursetype">Course Type</label>
+			<label index="tx_studyvisualizer_domain_model_coursetype.title">Title</label>
+			<label index="tx_studyvisualizer_domain_model_coursetype.description">Description</label>
+			<label index="tx_studyvisualizer_domain_model_programfield">Program Field</label>
+			<label index="tx_studyvisualizer_domain_model_programfield.title">Title</label>
+			<label index="tx_studyvisualizer_domain_model_programfield.description">Description</label>
+		</languageKey>
+	</data>
+</T3locallang>
